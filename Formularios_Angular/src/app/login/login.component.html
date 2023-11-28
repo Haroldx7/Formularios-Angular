@@ -1,0 +1,9 @@
+<form (ngSubmit)="verificarDatos()" [formGroup]="loginForm" class="login">
+    <h1>Log in</h1>
+    <input type="email" class="caja-texto" placeholder="Usuario" formControlName="correoUsuario">
+    <input type="password" class="caja-texto" placeholder="Contraseña" formControlName="contrasenaUsuario">
+    <input type="submit" class="btnlogin" value="Log in">
+    <button (click)="recuperarC()">recuperar contraseña</button>
+    <button (click)="navegar()">register</button>
+</form>
+
